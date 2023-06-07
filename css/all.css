@@ -1,0 +1,278 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 64px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+.banner {
+  background: url(../img/banner/banner.png);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+.banner .career {
+  margin-top: 32px;
+}
+.banner .icons {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+.about {
+  padding: 56px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about .pic {
+  margin: 40px 0 20px;
+  max-width: 394px;
+}
+.about .pic img {
+  width: 100%;
+}
+.about .birthday {
+  margin-top: 4px;
+}
+.about .education {
+  margin-top: 8px;
+}
+.about .exp {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 28px;
+}
+.about .exp li::before {
+  content: "●";
+  color: #891818;
+  width: 22px;
+  height: 22px;
+  margin-right: 16px;
+}
+
+.line {
+  width: 20%;
+  margin-top: 25px;
+  border: 1px solid #707070;
+}
+
+.brand {
+  color: white;
+  padding: 56px 0 160px;
+  background-color: black;
+  text-align: center;
+}
+.brand .title h3 {
+  margin-top: 12px;
+}
+.brand .content {
+  margin-top: 32px;
+}
+.brand .pic {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.brand .pic img {
+  width: 100%;
+  vertical-align: bottom;
+}
+.brand .pic .brandImg1 {
+  width: 66%;
+}
+.brand .pic .brandImg3 img {
+  padding-left: 24px;
+}
+.brand .pic .brandImg2, .brand .pic .brandImg3 {
+  width: 49%;
+  margin-top: 40px;
+}
+
+@media (max-width: 767px) {
+  .brand {
+    padding: 56px 0 0px;
+  }
+  .brand .pic .brandImg1, .brand .pic .brandImg2, .brand .pic .brandImg3 {
+    width: 100%;
+  }
+  .brand .pic .brandImg2, .brand .pic .brandImg3 {
+    margin-top: 16px;
+  }
+}
+.work {
+  margin: 56px auto 144px;
+  text-align: center;
+  max-width: 1200px;
+}
+.work .title h3, .work .item h3 {
+  margin-top: 16px;
+}
+.work .pic {
+  margin-top: 56px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.work .pic li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+.work .pic li:nth-child(n+2) {
+  margin-top: 48px;
+}
+.work .pic .item {
+  width: 100%;
+}
+.work .pic img {
+  vertical-align: bottom;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .work li {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+footer {
+  padding: 64px 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+footer ul li {
+  margin-top: 16px;
+}

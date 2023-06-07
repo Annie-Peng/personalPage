@@ -1,0 +1,49 @@
+.brand{
+    color: white;
+    padding: 56px 0 160px;
+    background-color: black;
+    text-align: center;
+    .title h3{
+        margin-top: 12px;
+    }
+    .content{
+        margin-top: 32px;
+    }
+    .pic{
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 68px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 100%;
+            vertical-align: bottom;
+        }
+        .brandImg1{
+                width: 66%;
+        }
+        .brandImg3 img{
+            padding-left: 24px;
+        }
+        .brandImg2, .brandImg3{
+            width: 49%;
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .brand{
+        padding: 56px 0 0px;
+        .pic{
+            .brandImg1, .brandImg2, .brandImg3{
+                width: 100%;
+            }
+            .brandImg2, .brandImg3{
+                margin-top: 16px;
+            }
+        } 
+    }
+}

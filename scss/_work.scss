@@ -1,0 +1,32 @@
+.work{
+    margin: 56px auto 144px;
+    text-align: center;
+    max-width: 1200px;
+    .title h3, .item h3{
+        margin-top: 16px;
+    }
+    .pic{
+        margin-top: 56px;
+        justify-content: center;
+        li{
+            display: flex;
+            gap: 24px;
+            &:nth-child(n+2){
+                margin-top: 48px;
+            }
+        }
+        .item{
+            width: 100%;
+        }
+        img{
+            vertical-align: bottom;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .work li{
+        flex-wrap: wrap;
+    }
+}
