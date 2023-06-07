@@ -240,6 +240,9 @@ div {
   .brand .pic .brandImg2, .brand .pic .brandImg3 {
     margin-top: 16px;
   }
+  .brand .pic .brandImg3 img {
+    padding-left: 0;
+  }
 }
 .work {
   margin: 56px auto 144px;
@@ -276,6 +279,9 @@ div {
   .work li {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .work .pic li:nth-child(n+2) {
+    margin-top: 16px;
   }
 }
 footer {

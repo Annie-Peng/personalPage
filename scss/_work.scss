@@ -29,4 +29,13 @@
     .work li{
         flex-wrap: wrap;
     }
+    .work{
+        .pic{
+            li{
+                &:nth-child(n+2){
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
 }
